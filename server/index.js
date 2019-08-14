@@ -15,22 +15,30 @@ const errorNotify = chalk.bgYellow.red;
 const app = express();
 
 app.set("etag", isProduction);
-app.use("/images", express.static(path.join('images')));
 
 app.get("/", (req, res) => {
   res.sendFile('pages/index.html', { root: __dirname });
 });
 
+app.use("/images", express.static(path.join('images')));
+
+app.get('/products', (req, res) => {
+  res.status(200).send({
+    success: 'true',
+    message: 'todos retrieved successfully'
+  })
+});
+
 app.get("/search", (req, res) => {
   return res.send("search page");
 });
+
 // Let's listen on the imported PORT env variable
 app.listen(env.PORT, () => {
   log(`Server's started on port ${env.PORT}`);
 });
 
 // Open a browser instance for convenience
-opn(`${env.LOCAL_HOST}:${env.PORT}`);
-
+// opn(`${env.LOCAL_HOST}:${env.PORT}`);
 
 log(logNotify(`Let's get this party started...`));
