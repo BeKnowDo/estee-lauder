@@ -1,0 +1,29 @@
+{
+  "name": "este",
+  "version": "1.0.0",
+  "description": "Este Lauder tech screening",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BeKnowDo/estee-lauder.git"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "nodejs",
+    "express"
+  ],
+  "author": "Cesar Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeKnowDo/estee-lauder/issues"
+  },
+  "homepage": "https://github.com/BeKnowDo/estee-lauder#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
