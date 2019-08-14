@@ -1,12 +1,42 @@
+.opacity {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  bottom: 0;
+  left: 0;
+}
+
 .navigation {
+  position: relative;
+  z-index: 1;
   background-color: #fff;
   color: #000;
-  padding: 20px;
+  padding: 10px 20px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(3, 3, 3, .2);
+  box-shadow: 0 2px 10px rgba(3, 3, 3, .2);
+
+  h1 {
+    max-width: 100px;
+
+    a {
+      display: block;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
 
   ul {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 40px;
+    width: 100%;
     display: flex;
+    align-items: center;
     list-style-type: none;
     justify-content: space-between;
   }
@@ -42,7 +72,81 @@
     }
   }
 
-  .search {}
+  .search {
+    position: static;
+    padding: 0 20px;
+
+    &Container {
+      background-color: #fff;
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0 0 40px;
+
+      input {
+        border: 1px solid rgba(3, 3, 3, .2);
+        border-radius: 4px;
+        display: block;
+        width: 90%;
+        margin: 40px auto 0;
+        padding: 20px 16px;
+      }
+    }
+
+    &:hover {
+      .searchContainer {
+        display: block;
+      }
+    }
+  }
+
+  .inputWrapper {
+    position: relative;
+  }
+
+  .results {
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(3, 3, 3, .2);
+    box-shadow: 0 8px 12px rgba(3, 3, 3, .2);
+
+    li {
+      display: flex;
+      padding: 10px;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 0 0 2px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  .product {
+    position: relative;
+  }
+
+  .imageContainer {
+    position: relative;
+    margin: 0 10px 0 0;
+  }
+
+  .details {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
 
   .icon {
     display: block;
@@ -55,4 +159,17 @@
     cursor: pointer;
   }
 
+}
+
+.resultsDetails {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 10px 0 0;
+  display: flex;
+}
+
+.seeAll {
+  text-decoration: underline;
+  color: #000;
+  margin: 0 0 0 auto;
 }
