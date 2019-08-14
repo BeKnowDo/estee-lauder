@@ -27,6 +27,7 @@
   }
 
   img {
+    max-height: 80px;
     max-width: 100%;
     display: block;
   }
@@ -64,6 +65,8 @@
       }
 
       &:hover {
+        text-decoration: underline;
+
         &:after {
           transition: all .2s ease-in-out;
           transform: translateX(0);
@@ -129,6 +132,10 @@
     a {
       color: #000;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
