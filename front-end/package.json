@@ -4,6 +4,7 @@
   "proxy": "http://localhost:9000",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-fetch": "^3.0.4"
   }
 }

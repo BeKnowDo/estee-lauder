@@ -7,7 +7,7 @@
     "start-ui": "cd ./front-end/ && npm start",
     "start-api": "cd ./server/ && node index",
     "start": "concurrently \"npm run start-api\" \"npm run start-ui\"",
-    "seed": "node ./server/seeders/products.js --products=5 --search=blush"
+    "seed": "node ./server/seeders/products.js --products=4 --search=lipstick"
   },
   "repository": {
     "type": "git",
