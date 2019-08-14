@@ -50,7 +50,6 @@ class ProductSeeder {
       const id = faker.random.uuid()
       const isActive = faker.random.boolean()
       const price = faker.commerce.price()
-      const picture = faker.commerce.productName()
       const name = faker.commerce.productAdjective()
       const about = faker.company.catchPhraseDescriptor()
       const tags = []
@@ -68,7 +67,6 @@ class ProductSeeder {
         id,
         isActive,
         price,
-        picture,
         name,
         about,
         tags,
