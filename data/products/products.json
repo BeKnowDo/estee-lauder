@@ -1,1 +1,66 @@
-[{"id":"cf6399a3-8374-414f-ad14-d9d77dd0cadf","isActive":false,"price":"355.00","picture":"Rustic Plastic Soap","name":"Incredible","about":"upward-trending","tags":["Plastic","Concrete","Plastic"]}]
+[
+  {
+    "id": "39ded3f3-bfac-4b0f-9721-46798dfc7218",
+    "isActive": true,
+    "price": "200.00",
+    "picture": "Handmade Fresh Car",
+    "name": "Handcrafted",
+    "about": "modular",
+    "tags": [
+      "Rubber",
+      "Granite",
+      "Metal"
+    ],
+    "image": "https://images.unsplash.com/photo-1562887085-d0aa7ff20b95?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjg2NzQ0fQ"
+  },
+  {
+    "id": "76acc998-f5bf-4cb8-907e-3f33ea460358",
+    "isActive": true,
+    "price": "385.00",
+    "picture": "Unbranded Soft Salad",
+    "name": "Unbranded",
+    "about": "5th generation",
+    "tags": [
+      "Plastic",
+      "Concrete",
+      "Rubber"
+    ],
+    "image": "https://images.unsplash.com/photo-1562887189-e5d078343de4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjg2NzQ0fQ"
+  },
+  {
+    "id": "3d413e74-87c3-41f5-a69d-1c67249d6827",
+    "isActive": false,
+    "price": "890.00",
+    "picture": "Handcrafted Frozen Bacon",
+    "name": "Handmade",
+    "about": "composite",
+    "tags": [
+      "Steel"
+    ],
+    "image": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjg2NzQ0fQ"
+  },
+  {
+    "id": "3817f7be-b3bf-451f-b044-bd964485df5d",
+    "isActive": false,
+    "price": "10.00",
+    "picture": "Gorgeous Soft Chicken",
+    "name": "Sleek",
+    "about": "tertiary",
+    "tags": [
+      "Wooden"
+    ],
+    "image": "https://images.unsplash.com/photo-1467020421390-2fb2647a413e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjg2NzQ0fQ"
+  },
+  {
+    "id": "33946f3a-a1ac-42b9-a3af-6cc89b695a63",
+    "isActive": true,
+    "price": "337.00",
+    "picture": "Generic Steel Mouse",
+    "name": "Incredible",
+    "about": "encompassing",
+    "tags": [
+      "Steel"
+    ],
+    "image": "https://images.unsplash.com/photo-1562886889-0d7ec2bc333e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjg2NzQ0fQ"
+  }
+]

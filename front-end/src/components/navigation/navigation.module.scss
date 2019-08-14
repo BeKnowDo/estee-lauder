@@ -1,0 +1,58 @@
+.navigation {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  li {
+
+    >a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+      display: block;
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #000;
+        transform: translateX(-150%);
+        transition: all .2s ease-in-out;
+      }
+
+      &:hover {
+        &:after {
+          transition: all .2s ease-in-out;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  .search {}
+
+  .icon {
+    display: block;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMzJweCIgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzYgMTkyKSI+PHBhdGggZD0iTS01NDQuODgtMTY1LjEyMWwtNy4zNDItNy4zNDJjLTEuMDk1LDEuNzAxLTIuNTQxLDMuMTQ4LTQuMjQyLDQuMjQybDcuMzQzLDcuMzQyYzEuMTcyLDEuMTcyLDMuMDcxLDEuMTcyLDQuMjQxLDAgICBDLTU0My43MDctMTYyLjA0OC01NDMuNzA3LTE2My45NDctNTQ0Ljg4LTE2NS4xMjF6Ii8+PHBhdGggZD0iTS01NTItMTgwYzAtNi42MjctNS4zNzMtMTItMTItMTJzLTEyLDUuMzczLTEyLDEyczUuMzczLDEyLDEyLDEyUy01NTItMTczLjM3My01NTItMTgweiBNLTU2NC0xNzFjLTQuOTY0LDAtOS00LjAzNi05LTkgICBjMC00Ljk2Myw0LjAzNi05LDktOWM0Ljk2MywwLDksNC4wMzcsOSw5Qy01NTUtMTc1LjAzNi01NTkuMDM3LTE3MS01NjQtMTcxeiIvPjxwYXRoIGQ9Ik0tNTcxLTE4MGgyYzAtMi43NTcsMi4yNDItNSw1LTV2LTJDLTU2Ny44Ni0xODctNTcxLTE4My44NTgtNTcxLTE4MHoiLz48L2c+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+}

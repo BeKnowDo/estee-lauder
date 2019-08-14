@@ -4,7 +4,10 @@
   "description": "Este Lauder tech screening",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server"
+    "start-ui": "cd ./front-end/ && npm start",
+    "start-api": "cd ./server/ && node index",
+    "start": "concurrently \"npm run start-api\" \"npm run start-ui\"",
+    "seed": "node ./server/seeders/products.js --products=5 --search=blush"
   },
   "repository": {
     "type": "git",
@@ -23,12 +26,16 @@
   },
   "homepage": "https://github.com/BeKnowDo/estee-lauder#readme",
   "devDependencies": {
+    "concurrently": "^4.1.1",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "fs-extra": "^8.1.0",
+    "node-fetch": "^2.6.0",
     "nodemon": "^1.19.1",
     "opn": "^6.0.0",
+    "unsplash-js": "^5.0.0",
+    "whatwg-fetch": "^3.0.0",
     "yargs": "^13.3.0"
   }
 }
